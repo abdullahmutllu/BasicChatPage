@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+*:focus {
+  outline: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.chat {
+  height: 100%;
+  display: flex;
+}
+.chat .sidebar .search {
+  position: relative;
+  height: 50px;
+  min-height: 50px;
+  border-bottom: 1px solid;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.chat .sidebar .search input {
+  width: 100%;
+  height: 30px;
+  background-color: bisque;
+  border-radius: 30px;
+  padding: 0px 35px 0px 5px;
+}
+.chat .sidebar .search i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.chat .sidebar .person {
+  overflow: auto;
+  flex: 1;
+}
+.chat .sidebar .person ul li a:hover {
+  background-color: white;
+}
+.chat .sidebar .person ul li a {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 5px;
+}
+.chat .sidebar .person ul li a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+.chat .sidebar .person ul li a .content .name {
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.chat .sidebar .person ul li a .content .message {
+  font-size: 13px;
+  color: gray;
+}
+.chat .sidebar {
+  width: 300px;
+  min-width: 300px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+.chat .content {
+  flex: 1;
+  border-left: 1px solid;
+  display: flex;
+  flex-direction: column;
+}
+.chat .content .message-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  overflow: auto;
+}
+.chat .content .message-form {
+  border-top: 1px solid #ddd;
+  background: #eee;
+  padding: 10px 15px;
+}
+.chat .content .message-form ul {
+  display: flex;
+}
+.chat .content .message-form ul li.input {
+  flex: 1;
+}
+.chat .content .message-form ul li.input input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 36px;
+  border: 1px solid #ddd;
+  border-radius: 36px;
+  font-size: 14px;
+  padding: 0 15px;
+}
+.chat .content .message-form ul li {
+  margin: 0 5px;
+}
+.chat .content .message-form ul li a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chat .content .message-form ul li a i {
+  margin-top: 0.7px;
+}
+
+.chat .content .message-header {
+  height: 50px;
+  min-height: 50px;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.chat .content .message-header .userInfo {
+  display: flex;
+  align-items: center;
+}
+.chat .content .message-header .userInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+.chat .content .message-header .userInfo .user .name {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+.chat .content .message-header .userInfo .user .time {
+  font-size: 10px;
+  color: #999;
+}
+.chat .content .message-header .setting ul {
+  display: flex;
+}
+.chat .content .message-header .setting ul li {
+  margin-left: 10px;
+}
+.chat .content .message-header .setting ul li a {
+  font-size: 15px;
+  color: #999;
+}
+.chat .content .message-header .setting ul li a:hover {
+  color: black;
+}
+.chat .content .message-content .empty {
+  margin-bottom: auto;
+}
+.chat .content .message-content .message {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+.chat .content .message-content .message.me {
+  align-self: flex-end;
+}
+.chat .content .message-content .message.me .time {
+  text-align: right;
+}
+.chat .content .message-content .message.me .messageContent {
+  background: #2196f3;
+  color: #fff;
+}
+.chat .content .message-content .message .time {
+  font-size: 11px;
+  color: #999;
+}
+.chat .content .message-content .message .messageContent {
+  padding: 6px 12px;
+  background: #f7f7f7;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
